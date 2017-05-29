@@ -1,6 +1,5 @@
 
 .idea/
 __pycache__/
-mft_server.py
 http_and_ssh/
 *.pyc
