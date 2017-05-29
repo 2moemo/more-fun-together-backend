@@ -2,7 +2,7 @@ import traceback
 import asyncio
 import importlib
 from setting.config import Config
-from module.printer import trace
+from module.printer import log
 
 
 class Handler:
@@ -29,6 +29,6 @@ class Handler:
 
       self.response = yield from serviceClass(self.requestDict).execute()
     except:
-      trace(traceback.format_exc())
+      log(traceback.format_exc())
 
     return self.response

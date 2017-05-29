@@ -4,7 +4,7 @@ import traceback
 # import aioredis
 # import redis
 from setting.config import Config
-from module.printer import trace
+from module.printer import log
 
 
 class Redis:
@@ -14,10 +14,10 @@ class Redis:
     try:
       pass
     except:
-      trace(traceback.format_exc())
+      log(traceback.format_exc())
 
   async def execute(self):
     try:
       pass
     except:
-      trace(traceback.format_exc(s))
+      log(traceback.format_exc(s))

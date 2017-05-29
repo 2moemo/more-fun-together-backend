@@ -11,7 +11,7 @@ from setting.config import Config
 from module.net import Net
 from module.redis import Redis
 from service.handler import Handler as serviceHandler
-from module.printer import trace
+from module.printer import log
 
 
 logging.basicConfig(level=logging.INFO)  # enable logging for api_hour
@@ -76,7 +76,7 @@ class Container(api_hour.Container):
                 parameters = requestData.get('parameters', {})
 
                 # print(한글) 이면 에러가 난다. in ubuntu
-                trace(str(ujson.dumps(parameters)))
+                log(str(ujson.dumps(parameters)))
 
             # 처리 완료된 response
             requestDict = {
