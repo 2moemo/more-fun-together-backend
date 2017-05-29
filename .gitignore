@@ -1,2 +1,6 @@
-# Created by .ignore support plugin (hsz.mobi)
+
+.idea/
+__pycache__/
+mft_server.py
+http_and_ssh/
 *.pyc
